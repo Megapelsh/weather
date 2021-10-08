@@ -1,0 +1,27 @@
+html, body {
+    font-family: serif;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body,
+.wrapper {
+    /*margin: 20px;*/
+    background: linear-gradient(45deg, rgb(90,137,251), rgb(132,221,232)) no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    box-shadow: -10px 10px 50px rgba(60,90,170, .3);
+}
+
+.header {
+    display: flex;
+}
