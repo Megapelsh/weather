@@ -95,3 +95,9 @@ getDataFromWeatherAPI(url);
 console.log('****////****');
 console.log(getDailyForecast(50.4333, 30.5167));
 console.log('****////****');
+
+
+console.log('++++++++++++++++');
+console.log(cityList);
+
+console.log('++++++++++++++++');
