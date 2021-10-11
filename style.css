@@ -108,12 +108,7 @@ body,
 }
 
 .temp .icon img {
-    margin: 0;
-}
-
-.farengheit {
-    margin: .05em auto 0 .3em;
-    font-size: 2em;
+    margin: 0 auto;
 }
 
 .features {
@@ -158,6 +153,7 @@ body,
 .footer {
     display: flex;
     background: rgba(0,0,0,.5);
+    cursor: pointer;
 }
 
 .day {
