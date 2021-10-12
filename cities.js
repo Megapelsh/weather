@@ -30,13 +30,13 @@ let cityList = [
     }
   },
   {
-    "id": 5134295,
+    "id": 3169070,
     "name": "Rome",
-    "state": "NY",
-    "country": "US",
+    "state": "",
+    "country": "IT",
     "coord": {
-      "lon": -75.455727,
-      "lat": 43.212849
+      "lon": 12.4839,
+      "lat": 41.894741
     }
   },
   {

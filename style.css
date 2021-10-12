@@ -14,8 +14,6 @@ body {
 
 body,
 .wrapper {
-    /*margin: 20px;*/
-    /*background: linear-gradient(45deg, rgb(90,137,251), rgb(132,221,232)) no-repeat;*/
     display: flex;
     flex-direction: column;
 }
@@ -26,16 +24,9 @@ body,
     margin: auto;
     box-shadow: -10px 10px 50px rgb(34, 34, 38);
     background: rgba(255,255,255,0.05);
-    /*backdrop-filter: blur(5px);*/
+    overflow: hidden;
 }
 
-.display-off {
-    visibility: hidden;
-}
-
-.selected {
-    background: rgba(0,0,0,.3);
-}
 
 .header {
     display: flex;
@@ -55,15 +46,19 @@ body,
 
 .city_list {
     position: absolute;
-    top: 2.5em;
+    top: 1.5em;
+    left: -15em;
     font-size: 1.4em;
     background: rgba(255,255,255,.1);
     width: 8em;
     z-index: 1;
+    padding-left: 0;
+    transition: left .5s ease-out;
 }
 
 .city_option {
     padding: .5em;
+    list-style-type: none;
 }
 
 .city_option:hover {
@@ -72,6 +67,12 @@ body,
 
 .city svg {
     margin: auto 0 auto 1em;
+    transition: transform .5s ease-out;
+}
+
+.turn_right {
+    transform: rotate(90deg);
+    transition: transform .5s ease-out;
 }
 
 .date {
@@ -103,6 +104,10 @@ body,
     font-size: 8em;
 }
 
+.temp .degree_night {
+    text-align: center;
+}
+
 .temp .icon {
     display: flex;
 }
@@ -113,7 +118,8 @@ body,
 
 .features {
     position: absolute;
-    right: 0;
+    right: -9em;
+    transition: right 1s ease-out;
 }
 
 .feature {
@@ -190,3 +196,18 @@ hr {
     width: 100%;
     color:  #fff;
 }
+
+.selected {
+    background: rgba(0,0,0,.3);
+}
+
+.visible {
+    left: -.5em;
+    transition: left .5s ease-out;
+}
+
+.features_visible {
+    right: 0em;
+    transition: right 1s ease-out;
+}
+
